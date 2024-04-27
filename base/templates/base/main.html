@@ -1,3 +1,12 @@
+<!DOCTYPE html>
 <html>
-    hello bredah
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    {%for game in game%}
+    <a href="{%url 'gaming-profile' {{game.name}} %}">{{game.name}}</a>
+    {%endfor%}
+</body>
 </html>
